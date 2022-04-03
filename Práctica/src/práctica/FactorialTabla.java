@@ -1,25 +1,30 @@
-
 package práctica;
-        
+
+import java.util.Scanner;
+
 public class FactorialTabla {
-    public long factorial(long numero){
+    public int factorial(int numero){
         int factorial = 1;
-        long contadorFactorial = 1;
-        int i = 1;
-        while (i <= factorial){
-            contadorFactorial = contadorFactorial*i;
-            i++;
+        Scanner escaner = new Scanner(System.in);
+        System.out.println("Ingrese el número del que desee conocer su factorial");
+        numero = escaner.nextInt();
+        
+        while (numero != 0){
+            factorial = factorial * numero;
+            numero = numero - 1;
         }
-        return contadorFactorial;
+        
+        return factorial;
     }
+        
     public double tablaMultiplicar(double tabla){
         int contador = 1;
         double resultado;
         while (contador <= 10){
             resultado = tabla * contador;
-            System.out.println(tabla * contador+"="+resultado);
+            System.out.println(tabla + "*" + contador+"="+resultado);
             contador ++;
-         
+        
         }
         return 0;
     }
