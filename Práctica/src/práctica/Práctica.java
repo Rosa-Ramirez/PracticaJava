@@ -24,10 +24,12 @@ public class Práctica {
                  break;
                  
             case 2:
-                double tabla;
+                int tabla;
                 System.out.println("Ingrese el numero del que desee conocer su tabla");
-                tabla = escaner.nextDouble();
+                tabla = escaner.nextInt();
+                System.out.println("********");
                 System.out.println(Calculo.tablaMultiplicar(tabla));
+                System.out.println("********");
                 break;
             
             case 3:

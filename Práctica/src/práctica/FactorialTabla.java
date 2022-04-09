@@ -17,16 +17,18 @@ public class FactorialTabla {
         return factorial;
     }
         
-    public double tablaMultiplicar(double tabla){
+    public String tablaMultiplicar(int tabla){
         int contador = 1;
-        double resultado;
+        int resultado;
+        String resultadoTabla = "";
+        
         while (contador <= 10){
             resultado = tabla * contador;
-            System.out.println(tabla + "*" + contador+"="+resultado);
+           resultadoTabla = resultadoTabla + tabla + "X" + contador + "=" + resultado +"\n";
             contador ++;
         
         }
-        return 0;
+        return resultadoTabla;
     }
     
 }
